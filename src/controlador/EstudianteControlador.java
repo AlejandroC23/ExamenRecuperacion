@@ -80,6 +80,7 @@ public class EstudianteControlador {
                 
                 listadoEstudiantes.add(est);
             }
+            ejecutar.close();
         } catch (Exception e) {
             System.out.println("ERROR: " + e);
         }

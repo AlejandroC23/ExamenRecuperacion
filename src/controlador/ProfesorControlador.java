@@ -85,6 +85,7 @@ public class ProfesorControlador {
                 
                 listadoProfesores.add(pro);
             }
+            ejecutar.close();
         } catch (Exception e) {
             System.out.println("ERROR: " + e);
         }

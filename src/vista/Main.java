@@ -211,7 +211,7 @@ public class Main {
             cls();
             System.out.println("""
                         -----------------------------
-                                Menú Principal
+                               Menú Ver Personas
                         -----------------------------
                           1. Ver Estudiantes
                           2. Ver Profesores
