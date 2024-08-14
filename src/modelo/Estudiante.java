@@ -18,5 +18,32 @@ public class Estudiante extends Persona {
         super(idPersona, nombre, apellido, cedula, direccion);
         this.idEstudiante = idEstudiante;
     }
+
+    public int getIdEstudiante() {
+        return idEstudiante;
+    }
+
+    public void setIdEstudiante(int idEstudiante) {
+        this.idEstudiante = idEstudiante;
+    }
     
+    @Override
+    public String toString() {
+        return " -------- DATOS PERSONALES / ESTUDIANTE TR"
+                + getIdEstudiante() + " --------\n" 
+                + "Nombres: " + getNombre() + "\n"
+                + "Apellidos: " + getApellido() + "\n"
+                + "Cédula: " + getCedula() + "\n"
+                + "Calle: " + getDireccion().getCalle() + "\n"
+                + "Ciudad: " + getDireccion().getCiudad() + "\n"
+                + "Cod. Postal: " + getDireccion().getCodPostal() + "\n"
+                + "País: " + getDireccion().getPais().getNombrePais() + "\n"
+                + "Continente: " + getDireccion().getPais().getContinente().getNombreContinente()
+                + "\n";
+    }
+    
+    @Override
+    public void identificacion(){
+        System.out.println(toString());
+    }
 }
