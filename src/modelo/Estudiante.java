@@ -9,5 +9,14 @@ package modelo;
  * @author Alejandro
  */
 public class Estudiante extends Persona {
+    private int idEstudiante;
+
+    public Estudiante() {
+    }
+
+    public Estudiante(int idEstudiante, int idPersona, String nombre, String apellido, int cedula, Direccion direccion) {
+        super(idPersona, nombre, apellido, cedula, direccion);
+        this.idEstudiante = idEstudiante;
+    }
     
 }

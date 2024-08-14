@@ -9,5 +9,5 @@ package modelo;
  * @author Alejandro
  */
 public interface Humano {
-    
+    public void identificacion();
 }
