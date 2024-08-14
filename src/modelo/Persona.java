@@ -68,6 +68,15 @@ public class Persona implements Humano {
     
     @Override
     public void identificacion(){
-        
+        System.out.println(" -------- DATOS PERSONALES --------\n" 
+                + "Nombres: " + getNombre() + "\n"
+                + "Apellidos: " + getApellido() + "\n"
+                + "Cédula: " + getCedula() + "\n"
+                + "Calle: " + getDireccion().getCalle() + "\n"
+                + "Ciudad: " + getDireccion().getCiudad() + "\n"
+                + "Cod. Postal: " + getDireccion().getCodPostal() + "\n"
+                + "País: " + getDireccion().getPais().getNombrePais() + "\n"
+                + "Continente: " + getDireccion().getPais().getContinente().getNombreContinente()
+                + "\n");
     }
 }
